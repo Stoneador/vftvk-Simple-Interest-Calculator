@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,10 +9,10 @@
     <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step=".25" value="10.25">
-        <span id="rate_val">10.25%</span>  <br/>
-        No. of Years <select id="years">
+            <p style="margin-left: 40px"> <b>Amount<input type="number"  id="principal">  <br>
+            Rate<input type="range" oninput="updateRate()" id="rate" min="1" max="20" step=".25" value="10.25">
+            <span id="rate_val">10.25%</span>  <br>
+            No. of Years<select id="years">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -22,18 +23,21 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-        </select>  <br/>
-        Interest : <span id="result"></span><br>
+            </select>  <br>
+            Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute Interest</button>
-        <span id="result">
-
+	<span id="result">
         </span>
+
+	<span style="background-color:yellow" id="result1">
+        </span>
+
+    <footer>
+       &#169; This Calculator belongs to Christian Stone 
+    </footer>
     </div>
         
     <body>
     </body>
-    <footer>
-       &#169; This Calculator belongs to Christian Stone 
-    </footer>
 </html>
